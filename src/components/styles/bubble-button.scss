@@ -1,14 +1,6 @@
 /* add css module styles here (optional) */
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
-}
-
-.bubble-button {
+.bubbleButton {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 700;
@@ -25,11 +17,11 @@
   &::after,
   &::before {
     border: 0;
-    content: "";
+    content: '';
     position: absolute;
     height: 40%;
     width: 20%;
-    transition: all 0.4s;
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
     z-index: -2;
     border-radius: 50%;
   }
@@ -39,14 +31,14 @@
     top: 0rem;
     left: 0rem;
     /* animation: topAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.25s
-      infinite alternate; */
+        infinite alternate; */
   }
   &::after {
     background-color: green;
     top: 1rem;
-    left: 3rem;
+    left: 3.5rem;
     /* animation: bottomAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.5s
-      infinite alternate; */
+        infinite alternate; */
   }
   &:hover {
     color: white !important;
@@ -68,11 +60,11 @@
   }
 }
 
-.move_left{
+.animationMove {
   &::after,
   &::before {
     border: 0;
-    content: "";
+    content: '';
     position: absolute;
     height: 40%;
     width: 20%;
@@ -82,13 +74,13 @@
   &::before {
     border: 0;
     background-color: red;
-    top: 1rem;
+    top: 1.5rem;
     left: 0rem;
   }
   &::after {
     background-color: green;
     top: 1rem;
-    left: 0rem;
+    left: -0.3rem;
   }
 }
 

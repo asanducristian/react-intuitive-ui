@@ -1,10 +1,10 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-intuitive-ui'
+import { DatePickerAdd } from 'react-intuitive-ui'
 import 'react-intuitive-ui/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return <DatePickerAdd submitLabel="TEST" onSubmit={()=>{console.log("submit")}} />
 }
 
 export default App
